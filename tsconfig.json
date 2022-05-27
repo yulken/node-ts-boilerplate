@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "outDir": "./dist",
+      "strict": true,
+      "strictPropertyInitialization": false,
+      "allowJs": true,
+      "baseUrl": "./",
+      "paths": {
+        "@shared/*": ["src/shared/*"],
+        "@http/*": ["src/shared/infra/http/*"],
+      },
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+      "src/**/*.ts",
+      "src/resources/*.json"
+    ]
+}
+
