@@ -1,4 +1,4 @@
-import '@shared/loggers/tracer';
+import '@shared/loggers/ddTracer';
 import server from '@http/server';
 import log from '@shared/loggers/log';
 
