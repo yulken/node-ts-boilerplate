@@ -14,12 +14,10 @@ const logInput = (request: Request) => {
   request.body.length && log.info('BODY::', request.body);
 };
 
-const logOutput = (response: Response) => {
+const logOutput = (response: Response) => 
   response.contentBody && log.info('RESPONSE::', JSON.parse(response.contentBody));
-};
-  
 
-const requestTracer = (request: Request, response: Response, next: NextFunction) => {
+const interceptLogs = (request: Request, response: Response, next: NextFunction) => {
   logInput(request);
 
   response.send = resDotSendInterceptor(response, response.send);
@@ -29,5 +27,5 @@ const requestTracer = (request: Request, response: Response, next: NextFunction)
 };
 
 export {
-  requestTracer 
+  interceptLogs 
 };

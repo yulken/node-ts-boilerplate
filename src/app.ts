@@ -1,5 +1,5 @@
 import '@shared/loggers/ddTracer';
-import server from '@http/server';
+import server from '@infra/http/server';
 import log from '@shared/loggers/log';
 
 server.listen(server.settings.port, () => {

@@ -2,7 +2,6 @@ import config from '@shared/config';
 import log from '@shared/loggers/log';
 import AWS, { AWSError } from 'aws-sdk';
 
-
 AWS.config.update({
   region: config.aws.region
 });

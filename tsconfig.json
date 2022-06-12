@@ -14,12 +14,9 @@
       "@shared/*": [
         "src/shared/*"
       ],
-      "@http/*": [
-        "src/shared/infra/http/*"
-      ],
-      "@aws/*": [
-        "src/shared/infra/aws/*"
-      ],
+      "@infra/*": [
+        "src/infra/*"
+      ]
     },
     "esModuleInterop": true,
     "resolveJsonModule": true,
