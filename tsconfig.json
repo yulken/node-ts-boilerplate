@@ -9,20 +9,16 @@
     "strict": true,
     "strictPropertyInitialization": false,
     "allowJs": true,
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
       "@shared/*": [
-        "src/shared/*"
+        "./src/shared/*"
       ],
       "@infra/*": [
-        "src/shared/infra/*"
+        "./src/shared/infra/*"
       ],
-      /**
-       * MODULES
-       *
-       */
       "@github/*": [
-        "src/modules/github/*"
+        "./src/modules/github/*"
       ]
     },
     "esModuleInterop": true,
@@ -33,7 +29,8 @@
     "forceConsistentCasingInFileNames": true
   },
   "include": [
-    "src/**/*.ts",
-    "src/resources/*.json"
+    "./src/**/*.ts",
+    "./test/**/*.ts",
+    "./src/resources/*.json"
   ]
 }
