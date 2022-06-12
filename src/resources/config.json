@@ -1,5 +1,8 @@
 {
   "aws": {
     "region": "${AWS_REGION}"
+  },
+  "github": {
+    "baseUrl": "https://api.github.com"
   }
 }
