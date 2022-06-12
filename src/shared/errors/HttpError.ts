@@ -7,6 +7,7 @@ export default class HttpError extends Error {
     statusCode = 400
   ) {
     super(message);
+    this.message = message;
     this.statusCode = statusCode;
   }
 }

@@ -15,7 +15,14 @@
         "src/shared/*"
       ],
       "@infra/*": [
-        "src/infra/*"
+        "src/shared/infra/*"
+      ],
+      /**
+       * MODULES
+       *
+       */
+      "@github/*": [
+        "src/modules/github/*"
       ]
     },
     "esModuleInterop": true,
